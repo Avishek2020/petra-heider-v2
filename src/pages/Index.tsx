@@ -1,8 +1,8 @@
 import Candle from "@/components/Candle";
-import Cross from "@/components/Cross";
 import Divider from "@/components/Divider";
 import CondolenceForm from "@/components/CondolenceForm";
 import petraImage from "@/assets/petra-heider.png";
+import crossImage from "@/assets/cross.png";
 
 const Index = () => {
   return (
@@ -25,7 +25,11 @@ const Index = () => {
         <div className="flex items-center justify-center gap-6 md:gap-10 mb-10">
           {/* Cross */}
           <div className="flex-shrink-0">
-            <Cross size={100} className="opacity-80" />
+            <img 
+              src={crossImage} 
+              alt="Kreuz" 
+              className="w-20 h-28 md:w-24 md:h-32 object-contain opacity-80"
+            />
           </div>
           
           {/* Photo */}
