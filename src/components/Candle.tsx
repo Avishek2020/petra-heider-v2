@@ -5,7 +5,7 @@ interface CandleProps {
 }
 
 const Candle = ({ className = "" }: CandleProps) => {
-  const [isLit, setIsLit] = useState(true);
+  const [isLit, setIsLit] = useState(false);
 
   return (
     <div className={`flex flex-col items-center ${className}`}>
