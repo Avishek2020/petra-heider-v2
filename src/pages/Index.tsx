@@ -28,7 +28,7 @@ const Index = () => {
             <img 
               src={crossImage} 
               alt="Kreuz" 
-              className="w-20 h-28 md:w-24 md:h-32 object-contain opacity-80"
+              className="w-32 h-40 md:w-40 md:h-52 object-contain opacity-80"
             />
           </div>
           
