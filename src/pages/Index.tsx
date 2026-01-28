@@ -22,9 +22,9 @@ const Index = () => {
         </header>
         
         {/* Main memorial section with aligned images */}
-        <div className="flex items-center justify-center gap-6 md:gap-10 mb-10">
-          {/* Cross */}
-          <div className="flex-shrink-0">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 mb-10">
+          {/* Cross - hidden on mobile, shown on desktop */}
+          <div className="hidden md:flex flex-shrink-0">
             <img 
               src={crossImage} 
               alt="Kreuz" 
@@ -38,13 +38,23 @@ const Index = () => {
               <img
                 src={petraImage}
                 alt="Dr. Petra Heider"
-                className="w-32 h-40 md:w-40 md:h-52 object-cover"
+                className="w-40 h-52 md:w-40 md:h-52 object-cover"
               />
             </div>
           </div>
           
-          {/* Candle */}
-          <div className="flex-shrink-0">
+          {/* Cross and Candle row on mobile */}
+          <div className="flex md:hidden items-center justify-center gap-8">
+            <img 
+              src={crossImage} 
+              alt="Kreuz" 
+              className="w-20 h-28 object-contain opacity-80"
+            />
+            <Candle />
+          </div>
+          
+          {/* Candle - hidden on mobile, shown on desktop */}
+          <div className="hidden md:flex flex-shrink-0">
             <Candle />
           </div>
         </div>
